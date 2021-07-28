@@ -1,0 +1,17 @@
+[package]
+name = "zero2hero"
+version = "0.1.0"
+authors = ["wandy <wandy.irawan17@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+src = "src/lib.rs"
+
+[[bin]]
+path = "src/main.rs"
+name = "zero2hero"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+warp = "0.3"
